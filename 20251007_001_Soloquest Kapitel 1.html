@@ -104,7 +104,14 @@ var LZString=function(){var r=String.fromCharCode,o="ABCDEFGHIJKLMNOPQRSTUVWXYZa
 		<div id="init-lacking"><p>Browser lacks capabilities required to play.</p><p>Upgrade or switch to another browser.</p></div>
 		<div id="init-loading"><div>Loading&hellip;</div></div>
 	</div>
-	<tw-storydata name="Soloquest Kapitel 1" startnode="1" creator="Twine" creator-version="2.10.0" format="SugarCube" format-version="2.37.3" ifid="231D4771-3613-4484-A7AB-45412A366D1D" options="" tags="" zoom="1" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript">Config.history.controls = false;</script><tw-passagedata pid="1" name="Untitled Passage" tags="" position="325,50" size="100,100">Du liegst im Bett, die Decke bis zum Kinn gezogen. Die Müdigkeit in deinen Gliedern fühlt sich dieses Mal wie ein leiser Sieg an. Sieben Tage – keine Aufgabe vergessen, keine Gewohnheit ausgelassen, kein Rückfall in alte Muster. Deine Habitica-Gruppe war immer an deiner Seite, und Zerflixt, der Heiler, hat dich mit seinen Nachrichten oft zum Lächeln gebracht.
+	<tw-storydata name="Soloquest Kapitel 1" startnode="1" creator="Twine" creator-version="2.10.0" format="SugarCube" format-version="2.37.3" ifid="231D4771-3613-4484-A7AB-45412A366D1D" options="" tags="" zoom="1" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript">Config.history.controls = false;
+Macro.add('autoscroll', {
+ handler : function() {
+ setTimeout(function() {
+ window.scrollTo({top: document.body.scrollHeight, behavior: 'smooth'});
+ }, 100); // 50 Millisekunden Verzögerung
+ }
+});</script><tw-passagedata pid="1" name="Untitled Passage" tags="" position="325,50" size="100,100">Du liegst im Bett, die Decke bis zum Kinn gezogen. Die Müdigkeit in deinen Gliedern fühlt sich dieses Mal wie ein leiser Sieg an. Sieben Tage – keine Aufgabe vergessen, keine Gewohnheit ausgelassen, kein Rückfall in alte Muster. Deine Habitica-Gruppe war immer an deiner Seite, und Zerflixt, der Heiler, hat dich mit seinen Nachrichten oft zum Lächeln gebracht.
 
 Heute bist du einfach zufrieden. Du hast durchgehalten. Während deine Gedanken langsam leiser werden, spürst du, wie sich ein sanftes Gefühl von Stolz und Ruhe ausbreitet. Die Wild am Sonntag - dieser  verrückte Zerflixt gibt sich so viel Mühe, in Gedanken erinnerst du dich an die letzte Ausgabe.
 
@@ -152,23 +159,17 @@ Mit einem einzigen Hieb fegt das Wesen einen Kämpfer beiseite. Der Körper knal
 &lt;&lt;/timed&gt;&gt;
 
 &lt;&lt;timed 32s&gt;&gt;
- &lt;&lt;script&gt;&gt;
- window.scrollTo({top: document.body.scrollHeight, behavior: &#39;smooth&#39;});
- &lt;&lt;/script&gt;&gt;
+&lt;&lt;autoscroll&gt;&gt;
 Ein Schrei gellt durch die Nacht. Das Monster dreht sich langsam zu dir um. Für einen Moment treffen sich eure Blicke – und dir wird klar, dass es dich bemerkt hat.
 &lt;&lt;/timed&gt;&gt;
 &lt;&lt;timed 38s&gt;&gt;
 
- &lt;&lt;script&gt;&gt;
- window.scrollTo({top: document.body.scrollHeight, behavior: &#39;smooth&#39;});
- &lt;&lt;/script&gt;&gt;
+&lt;&lt;autoscroll&gt;&gt;
 Das Monster bäumt sich auf, bereit zum Angriff. Plötzlich bemerkst du ein völlig verängstigtes Kind keine 5 Jahre alt, das hilflos auf dem Dorfplatz steht.  Jetzt ist schnelles Handeln gefragt denn nichts steht mehr zwischen dem Monster und dem hilflosen verängstigten Kind!
 &lt;&lt;/timed&gt;&gt;
 &lt;&lt;timed 45s&gt;&gt;
 
- &lt;&lt;script&gt;&gt;
- window.scrollTo({top: document.body.scrollHeight, behavior: &#39;smooth&#39;});
- &lt;&lt;/script&gt;&gt;
+&lt;&lt;autoscroll&gt;&gt;
 &lt;span id=&quot;entscheidung&quot;&gt;
  [[Schützend vor das Kind stellen-&gt;Heldentat]]
  [[Zögern-&gt;Zögern]]
@@ -176,9 +177,7 @@ Das Monster bäumt sich auf, bereit zum Angriff. Plötzlich bemerkst du ein völ
 &lt;&lt;/timed&gt;&gt;
 &lt;&lt;timed 52s&gt;&gt;
 
- &lt;&lt;script&gt;&gt;
- window.scrollTo({top: document.body.scrollHeight, behavior: &#39;smooth&#39;});
- &lt;&lt;/script&gt;&gt;
+&lt;&lt;autoscroll&gt;&gt;
  &lt;&lt;replace &quot;#entscheidung&quot;&gt;&gt;
  [[Zögern-&gt;Zögern]]
  &lt;&lt;/replace&gt;&gt;
